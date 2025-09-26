@@ -160,7 +160,7 @@ export const PetComponent: React.FC<PetComponentProps> = ({ onPointsChange, refr
     );
   };
 
-  const StatBar = ({ label, value, max, color, icon }: {
+  const StatBar = ({ label, value, max, icon }: {
     label: string;
     value: number;
     max: number;
