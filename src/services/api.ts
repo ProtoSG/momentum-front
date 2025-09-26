@@ -10,7 +10,7 @@ interface RegisterRequest {
   dayStartHour?: number;
 }
 
-const API_BASE_URL = 'https://momentum-back.onrender.com//api';
+const API_BASE_URL = 'https://momentum-back.onrender.com/api';
 
 class ApiService {
   private getAuthToken(): string | null {
