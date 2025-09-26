@@ -22,7 +22,6 @@ class ApiService {
     options: RequestInit = {}
   ): Promise<T> {
     const token = this.getAuthToken();
-    console.log({token})
 
     const config: RequestInit = {
       ...options,
@@ -106,7 +105,6 @@ class ApiService {
 
   async updateTaskStatus(taskId: number, status: TaskStatus): Promise<Task> {
     const statusUpdate: TaskStatusUpdate = { status };
-    console.log({status});
     return this.makeRequest<Task>(`/task/state/${taskId}`, {
       method: 'PUT',
       body: JSON.stringify(statusUpdate),

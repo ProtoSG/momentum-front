@@ -78,7 +78,6 @@ const Dashboard: React.FC = () => {
           reason: `Completar tarea: ${task.description}`
         });
         
-          console.log("pasa");
         // Award XP
         await apiService.addExperienceToPet(xpValue);
       }

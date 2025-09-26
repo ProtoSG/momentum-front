@@ -55,9 +55,8 @@ export const PetComponent: React.FC<PetComponentProps> = ({ onPointsChange, refr
           energy: petData.energy || 100,
           hunger: petData.hunger || 0
         }));
-        console.log({petData, levelsData})
       } catch {
-        console.log('No se encontró mascota para este usuario');
+        console.error('No se encontró mascota para este usuario');
         setPet(null);
       } finally {
         setLoading(false);
