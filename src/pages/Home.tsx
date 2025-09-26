@@ -85,7 +85,6 @@ function Home() {
               onClick={() => navigate('/register')}
               className="text-xl py-4 px-8"
             >
-              <Gamepad2 className="w-6 h-6 mr-2" />
               🚀 Comenzar Aventura
             </GameButton>
             

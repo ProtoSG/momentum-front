@@ -132,7 +132,7 @@ const Dashboard: React.FC = () => {
               ¡Bienvenido de vuelta, {user?.name}! 🎮
             </p>
           </div>
-          <GameButton onClick={handleLogout} variant="danger">
+          <GameButton onClick={handleLogout} variant="danger" className='flex'>
             <LogOut size={20} className="mr-2" />
             Salir
           </GameButton>
@@ -175,7 +175,6 @@ const Dashboard: React.FC = () => {
                 onClick={() => setShowTaskForm(true)}
                 className="w-full py-4 text-lg"
               >
-                <Plus size={24} className="mr-2" />
                 🚀 Nueva Misión
               </GameButton>
             )}

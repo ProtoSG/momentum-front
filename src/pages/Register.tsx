@@ -146,7 +146,6 @@ function Register() {
                 <>🔄 Creando cuenta...</>
               ) : (
                 <>
-                  <UserPlus className="w-5 h-5 mr-2" />
                   🚀 Crear Cuenta
                 </>
               )}

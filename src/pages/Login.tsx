@@ -5,7 +5,7 @@ import { loginSchema, type LoginFormData } from '../schemas/auth';
 import { useState, useEffect } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { GameButton, GameCard, GameInput } from '../components/GameComponents';
-import { Gamepad2, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { apiService } from '../services/api';
 
 function Login() {
@@ -113,7 +113,6 @@ function Login() {
                 <>🔄 Accediendo...</>
               ) : (
                 <>
-                  <Gamepad2 className="w-5 h-5 mr-2" />
                   🚀 Iniciar Sesión
                 </>
               )}
