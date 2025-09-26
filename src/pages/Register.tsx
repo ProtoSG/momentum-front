@@ -5,7 +5,7 @@ import { registerSchema, type RegisterFormData } from '../schemas/auth';
 import { useState, useEffect } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { GameButton, GameCard, GameInput } from '../components/GameComponents';
-import { UserPlus, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { apiService } from '../services/api';
 
 function Register() {

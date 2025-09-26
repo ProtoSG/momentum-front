@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { apiService } from '../services/api';
 import { GameButton, GameCard } from '../components/GameComponents';
-import { Gamepad2, Zap, Trophy, Target } from 'lucide-react';
+import { Zap, Trophy, Target } from 'lucide-react';
 
 function Home() {
   const { isAuthenticated, loading } = useAuth();
